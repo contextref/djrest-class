@@ -69,8 +69,8 @@ LOGGING = {
             'handlers': [
                 # 'logfile',
                 'console',
-                ],
-            'level': min_django_level,  """ this level or higher
+            ],
+            'level': min_django_level, """ this level or higher
                                             goes to the console """
             'propagate': False,  # don't propagate further to avoid dupl.
         },
