@@ -12,7 +12,5 @@ RUN apk del .tmp-build-deps
 RUN mkdir /app 
 WORKDIR /app
 COPY ./app /app
-RUN chmod -R 777 /app 
 RUN adduser -D user
-RUN chown user:user -R /app/
 USER user

@@ -8,4 +8,4 @@ services:
 before_script: pip install docker-compose
 
 script:
-  - docker-compose run app sh -c "chown -R user:user /app && chmod -R 777 /app && python manage.py test && flake8"
+  - docker-compose run app sh -c "python manage.py test && flake8"

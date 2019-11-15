@@ -66,7 +66,10 @@ LOGGING = {
     },
     'loggers': {
         'django': {  # configure all of Django's loggers
-            'handlers': ['logfile', 'console'],
+            'handlers': [
+                # 'logfile',
+                'console',
+                ],
             'level': min_django_level,  """ this level or higher
                                             goes to the console """
             'propagate': False,  # don't propagate further to avoid dupl.
@@ -74,7 +77,9 @@ LOGGING = {
         # root configuration – for all of our own apps
         # (feel free to do separate treatment for e.g. brokenapp vs. sth else)
         '': {
-            'handlers': ['logfile', 'console'],
+            'handlers': [
+                # 'logfile',
+                'console'],
             'level': min_level,  # this level or higher goes to the console,
         },
     },
