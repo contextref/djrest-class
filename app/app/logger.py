@@ -51,7 +51,7 @@ LOGGING = {
     'handlers': {
         'logfile': {
             # optionally raise to INFO to not fill the log file too quickly
-            'level': min_level,  # this level or higher goes to the log file
+            'level': 'ERROR',  # this level or higher goes to the log file
             'class': 'logging.handlers.RotatingFileHandler',
             # IMPORTANT: replace with your desired logfile name!
             'filename': os.path.join(BASE_DIR, 'core.log'),
