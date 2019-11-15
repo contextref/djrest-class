@@ -1,7 +1,7 @@
 import os
 import logging
 
-from .settings import BASE_DIR
+# from .settings import BASE_DIR
 from .settings import DEBUG
 
 # Usage in other modules:
